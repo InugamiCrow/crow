@@ -1,15 +1,31 @@
-h2{
-    color: blue;
-    font-family:'waltograph';
+* {
+    margin: 0;
+    padding: 0;
 }
-
-/* waltograph - latin */
-@font-face {
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  rgb(255, 255, 255,);
+    color: rgb(64,64,64);
+    height: 100vh;
+    width: 100%;
+}
+label{
+    font-family: 'Cinzel', sans-serif;
+font-size: 9em;
+text-align: center;
+}
+  /* cinzel-700 - latin */
+  @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'waltograph';
+    font-family: 'Cinzel';
     font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/waltograph42.otf'); /* IE9 Compat Modes */
-    src: url('../waltographUI.ttf'), /* IE6-IE8 */
-         
+    font-weight: 700;
+    src: url('../fonts/cinzel-v19-latin-700.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/cinzel-v19-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/cinzel-v19-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/cinzel-v19-latin-700.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/cinzel-v19-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/cinzel-v19-latin-700.svg#Cinzel') format('svg'); /* Legacy iOS */
   }
