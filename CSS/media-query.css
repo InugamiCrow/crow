@@ -61,7 +61,7 @@ a {
 @media only screen and (max-width: 1600px) {
     .main-menu{
        height: 100vh;
-       background-color: rgb(64, 64, 64);
+       background-color: rgb(85, 82, 82);
        list-style: none;
        text-align: center;
        position: fixed;
