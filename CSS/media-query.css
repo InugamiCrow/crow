@@ -8,9 +8,18 @@
     color: white;
     height: 80px;
     width: 100%;
-    
+  
     
 }
+
+.main-nav-2 {
+    background-color: rgb(64, 64, 64);
+    color: white;
+    height: 80px;
+    width: 100%;
+    
+}
+
 
 .main-menu {
     font-size: 1.3em;
@@ -18,6 +27,17 @@
     font-weight: 700;
     text-align: right;
     list-style: none;
+}
+
+.main-menu-block {
+height: 100vh;
+background-color: rgb(80, 80, 80);
+list-style: none;
+text-align: center;
+font-family: 'Poppins', sans-serif;
+font-size: 1.3em;
+font-weight: 700; 
+
 }
 
 .item-style {
@@ -40,9 +60,27 @@ a {
 
 @media only screen and (max-width: 1600px) {
     .main-menu{
-        height: 100vh;  
-        background-color: rgb(64, 64, 64);
-        text-align: center;
+       height: 100vh;
+       background-color: rgb(64, 64, 64);
+       list-style: none;
+       text-align: center;
+       position: fixed;
+       width: 100%;
+       left: -100%;
+       transition: left 400ms;
+    }
+
+    .main-menu-block{
+    list-style: none;
+height: 100vh;
+background-color: rgb(64, 64, 64);
+text-align: center;
+position: fixed;
+width: 100%;
+left: 0;
+transition: left 400ms;
+}
+
     }
 
     .item-style {
