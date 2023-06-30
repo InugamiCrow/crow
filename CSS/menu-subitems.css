@@ -1,18 +1,22 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
 }
 
 nav {
-    background-color: rgb(117, 108, 247);
+    background-color: rgb(230, 58, 135);
     height: 70px;
+    
+       
 }
 nav ul {
-    background-color:rgb(117, 108, 247);
+    background-color:rgb(230, 58, 135);
     list-style: none;
     position: absolute;
     width: 100%;
+   
 }
 
 nav > ul > li {
@@ -25,15 +29,17 @@ nav > ul > li {
 }
 
 nav > ul {
-    margin-left: 40px;
+    margin-left: 0px;
+    
 }
-
 ul li {
-position: relative;
-}
+    position: relative;
+   
+    }
+
 
 li:hover {
-    background-color: rgb(29, 12, 83);
+    background-color: rgb(124, 27, 71);
     cursor: pointer;
 }
 
@@ -44,14 +50,14 @@ a {
 nav li li {
     max-height: 0;
     overflow: hidden;
-    transition: all 1s;
+    transition: all 0.3s;
 }
 
 nav li:hover > ul > li {
     overflow: visible;
     max-height: 500px;
     border: 1px solid rgba(255, 255, 255, 0.225);
-    transition: all 1s;
+    transition: all 0.8s;
 }
 
 nav ul ul ul {

@@ -1,0 +1,140 @@
+*{
+    font-family: sans-serif;
+}
+
+.h1 {
+    text-align: center;
+}
+
+.box-cont {
+background-color: rgb(240, 112, 63, 1);
+gap: 20px;
+
+}
+.box-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.box-2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.box-3 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-4 {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.box-5 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.box-6 {
+    display: flex;
+    justify-content: space-between;
+}
+.box-7 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.box-8 {
+    display: flex;
+    justify-content: space-evenly;
+}
+.box-9 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+  
+.box-height {
+    height: 500px;
+    gap: 70px;
+}
+
+.box-gen {
+    background-color: rgba(136, 60, 30, 0.824);
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.8em;  
+  
+}
+
+.box-main-wrap {
+height: 300px;
+overflow-x: scroll;
+overflow-y:hidden ;
+gap: 20px;
+width: 70%;
+margin: 0 auto;
+}
+.box-10 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    }
+
+.box-a {
+    height: 500px;
+    width: 70px;
+    background-color: #EFE081;
+    }
+.box-b{
+    height: 258px;
+    width: 70px;
+    background-color: #87C19B;
+}
+.box-c{
+    height: 320px;
+    width: 70px;
+    background-color: #552512;
+
+}
+.box-d{
+    height: 210px;
+    width: 70px;
+    background-color: #0B7072;
+
+}
+/* Color Theme Swatches in Hex */
+.Gama-de-colores-pasteles-1-hex { color: #0B7072; }
+.Gama-de-colores-pasteles-2-hex { color: #87C19B; }
+.Gama-de-colores-pasteles-3-hex { color: #EFE081; }
+.Gama-de-colores-pasteles-4-hex { color: #F0B66B; }
+.Gama-de-colores-pasteles-5-hex { color: #F1713F; }
+
+/* Color Theme Swatches in RGBA */
+.Gama-de-colores-pasteles-1-rgba { color: rgba(11, 112, 114, 1); }
+.Gama-de-colores-pasteles-2-rgba { color: rgba(135, 193, 154, 1); }
+.Gama-de-colores-pasteles-3-rgba { color: rgba(239, 223, 128, 1); }
+.Gama-de-colores-pasteles-4-rgba { color: rgba(239, 181, 107, 1); }
+.Gama-de-colores-pasteles-5-rgba { color: rgba(240, 112, 63, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Gama-de-colores-pasteles-1-hsla { color: hsla(181, 82, 24, 1); }
+.Gama-de-colores-pasteles-2-hsla { color: hsla(140, 31, 64, 1); }
+.Gama-de-colores-pasteles-3-hsla { color: hsla(51, 77, 72, 1); }
+.Gama-de-colores-pasteles-4-hsla { color: hsla(33, 81, 68, 1); }
+.Gama-de-colores-pasteles-5-hsla { color: hsla(16, 86, 59, 1); }
+
+
+ 
+  
+  
+  
+  
+  
+  
+  
