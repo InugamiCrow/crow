@@ -7,7 +7,7 @@
     font-family: 'Poppins', sans-serif;
  }
 body {
-    background-color: #081b29;
+    background-color: #201106;
     color: #ededed;
 }
 
@@ -44,7 +44,7 @@ body {
 
 .navbar a:hover,
 .navbar a.active {
-    color: #00abf0;
+    color: #b4916e;
 }
 
 .home {
@@ -67,7 +67,7 @@ body {
 .home-content h3 {
     font-size: 22px;
     font-weight: 700;
-    color: #00abf0;
+    color: #b4916e;
 }
 
 .home-content p {
@@ -91,11 +91,11 @@ body {
     align-items: center;
     width: 150px;
     height: 100%;
-    background: #00abf0;
-    border: 2px solid #00abf0;
+    background: #b4916e;
+    border: 2px solid #b4916e;
     border-radius: 8px;
     font-size: 19px;
-    color: #081b29;
+    color: #201106;
     text-decoration: none;
     font-weight: 600;
     letter-spacing: 1px;
@@ -105,20 +105,20 @@ body {
 }
 
 .btn-box a:hover {
-    color: #00abf0;
+    color: #b4916e;
 }
 
 .btn-box a:nth-child(2) {
     background: transparent;
-    color: #00abf0;
+    color: #b4916e;
 }
 
 .btn-box a:nth-child(2):hover {
-    color: #081b29;
+    color: #201106;
 }
 
 .btn-box a:nth-child(2)::before {
-    background: #00abf0;
+    background: #b4916e;
 
 }
 
@@ -129,7 +129,7 @@ body {
     left: 0;
     width: 0;
     height: 100%;
-    background: #081b29;
+    background: #201106;
     z-index: -1;
     transition: .5s;
 }
@@ -154,17 +154,17 @@ body {
     width: 40px;
     height: 40px;
     background: transparent;
-    border: 2px solid #00abf0;
+    border: 2px solid #b4916e;
     border-radius: 50%;
     font-size: 20px;
-    color: #00abf0;
+    color: #b4916e;
     text-decoration: none;
     z-index: 1;
     overflow: hidden;
     transition: .5s;
 }
 .home-sci a:hover {
-    color: #081b29;
+    color: #201106;
 }
 
 .home-sci a::before {
@@ -174,7 +174,7 @@ body {
     left: 0;
     width: 0;
     height: 100%;
-    background: #00abf0;
+    background: #b4916e;
     z-index: -1;
     transition: .5s;
 }
