@@ -57,19 +57,7 @@ gap: 20px;
   
 .box-height {
     height: 500px;
-    gap: 70px;
-}
-
-.box-gen {
-    background-color: rgba(136, 60, 30, 0.824);
-    width: 250px;
-    height: 250px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 1.8em;  
-  
+    gap: 70px;  
 }
 
 .box-main-wrap {
