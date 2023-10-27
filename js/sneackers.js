@@ -17,6 +17,22 @@ botonCerrar.addEventListener("click", function() {
     boxImgFixed.classList.remove("box-img-fixed");
 });
 
+boxPlus.addEventListener("click", function (){
+    let cantidad=boxCantidad.innerHTML;
+    if (cantidad < 10 ) {
+        cantidad++;
+        document.getElementById("boxCantidad").innerHTML = cantidad
+    }
+})
+
+boxMinus.addEventListener("click", function (){
+    let cantidad=boxCantidad.innerHTML;
+    if (cantidad > 0 ) {
+        cantidad--;
+        document.getElementById("boxCantidad").innerHTML = cantidad
+    }
+})
+
 mainImg.addEventListener("click", function() {
    boxImgFixed.classList.remove("box-img-fixed-hidden");
    boxImgFixed.classList.add("box-img-fixed");
