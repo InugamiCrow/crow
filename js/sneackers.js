@@ -1,5 +1,5 @@
 let mainImg = document.getElementById("mainImg");
-let boxImgFixed = document.getElementById("boxImgFixed");
+let boxImgFixed=document.getElementById("boxImgFixed");
 let iconLeft = document.getElementById("iconLeft");
 let iconRight = document.getElementById("iconRight");
 let mainImgFixed1 = document.getElementById("mainImgFixed1");
@@ -9,33 +9,25 @@ let mainImgFixed4 = document.getElementById("mainImgFixed4");
 let thumb1=document.getElementById("thumb1");
 let thumb2=document.getElementById("thumb2");
 let thumb3=document.getElementById("thumb3");
-let thumb4=document.getElementById("thumb4");
-let botonCerrar =document.getElementById("botonCerrar")
+let thumb4=document.getElementById("thumb4"); 
+let botonCerrar= document.getElementById("botonCerrar");
+let boxMinus= document .getElementById("boxMinus");
+let boxCantidad = document .getElementById("boxCantidad");
+let boxPlus= document .getElementById("boxPlus");
+let valorUnitario= 180000
 
-botonCerrar.addEventListener("click", function() {
+
+
+
+
+botonCerrar.addEventListener("click",function() {
     boxImgFixed.classList.add("box-img-fixed-hidden");
     boxImgFixed.classList.remove("box-img-fixed");
 });
 
-boxPlus.addEventListener("click", function (){
-    let cantidad=boxCantidad.innerHTML;
-    if (cantidad < 10 ) {
-        cantidad++;
-        document.getElementById("boxCantidad").innerHTML = cantidad
-    }
-})
-
-boxMinus.addEventListener("click", function (){
-    let cantidad=boxCantidad.innerHTML;
-    if (cantidad > 0 ) {
-        cantidad--;
-        document.getElementById("boxCantidad").innerHTML = cantidad
-    }
-})
-
-mainImg.addEventListener("click", function() {
-   boxImgFixed.classList.remove("box-img-fixed-hidden");
-   boxImgFixed.classList.add("box-img-fixed");
+mainImg.addEventListener("click",function() {
+    boxImgFixed.classList.remove("box-img-fixed-hidden");
+    boxImgFixed.classList.add("box-img-fixed");
 });
 
 iconRight.addEventListener("click", function() {
@@ -67,39 +59,58 @@ iconLeft.addEventListener("click", function() {
         mainImgFixed1.classList.remove("img-hidden");
     }
 });
-
-thumb1.addEventListener("click", function () {
+thumb1.addEventListener("click", function(){
     mainImg.setAttribute("src","img/xd/image-product-1.jpeg");
     mainImgFixed1.classList.remove("img-hidden");
     mainImgFixed2.classList.add("img-hidden");
     mainImgFixed3.classList.add("img-hidden");
     mainImgFixed4.classList.add("img-hidden");
-  });
-
-thumb2.addEventListener("click", function () {
-  mainImg.setAttribute("src","img/xd/image-product-2.jpeg");
-  mainImgFixed1.classList.add("img-hidden");
+})
+thumb2.addEventListener("click", function(){
+    mainImg.setAttribute("src","img/xd/image-product-2.jpeg");
+    mainImgFixed1.classList.add("img-hidden");
     mainImgFixed2.classList.remove("img-hidden");
     mainImgFixed3.classList.add("img-hidden");
     mainImgFixed4.classList.add("img-hidden");
-});
-
-thumb3.addEventListener("click", function () {
+})
+thumb3.addEventListener("click", function(){
     mainImg.setAttribute("src","img/xd/image-product-3.jpeg");
     mainImgFixed1.classList.add("img-hidden");
     mainImgFixed2.classList.add("img-hidden");
     mainImgFixed3.classList.remove("img-hidden");
     mainImgFixed4.classList.add("img-hidden");
-  });
-
-  thumb4.addEventListener("click", function () {
+})
+thumb4.addEventListener("click", function(){
     mainImg.setAttribute("src","img/xd/image-product-4.jpeg");
     mainImgFixed1.classList.add("img-hidden");
     mainImgFixed2.classList.add("img-hidden");
     mainImgFixed3.classList.add("img-hidden");
     mainImgFixed4.classList.remove("img-hidden");
-  });
+});
+
+/* Mostrar el valor unitario */
+let valorUnitarioAux = Intl.NumberFormat ("DE-de").format(valorUnitario)
+document.getElementById ("precioUnitario").innerHTML = "$"  + valorUnitarioAux;
 
 
+boxPlus.addEventListener("click", function () {
+let cantidad= boxCantidad.innerHTML;
+if (cantidad < 10){
+    cantidad++;
+    document.getElementById("boxCantidad").innerHTML = cantidad;
+    let valorTotalInt= cantidad *valorUnitario;
+    let valorTotalAux = Intl.NumberFormat("DE-de").format (valorTotalInt)
+    document.getElementById("valorTotal"). innerHTML = "$"  + valorTotalAux;
+}
+})
+boxMinus.addEventListener("click", function () {
+    let cantidad= boxCantidad.innerHTML;
+    if (cantidad > 0){
+        cantidad--;
+        document.getElementById("boxCantidad").innerHTML = cantidad;
+        let valorTotalInt= cantidad *valorUnitario;
+        let valorTotalAux = Intl.NumberFormat("DE-de").format (valorTotalInt)
+        document.getElementById("valorTotal"). innerHTML = "$"  + valorTotalAux;
 
-
+    }
+})   

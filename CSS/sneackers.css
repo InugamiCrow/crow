@@ -77,8 +77,6 @@ body{
     box-shadow: 0 -2px  5px rgb(96, 96, 96);
 
 }
-
-
 .box-left {
     grid-area: box-left;
     grid-template:"box-img"
@@ -204,7 +202,6 @@ body{
     border-radius: 30px;
     height: 103px;
    
-
 }
 .box-info{
     grid-area: box-info;
@@ -215,72 +212,73 @@ body{
     display: flex;
     flex-direction: row;
 }
-
-.precio {
+.precio{
     margin-top: 25px;
     font-weight: 700;
-    font-size:2.1em;
+    font-size: 2.1em;
 }
-.descuento {
+.descuento{
     display: flex;
     align-items: flex-end;
     font-weight: 600;
 }
-
 .lbl-descuento {
-    background-color: rgb(255, 237, 224);
+    background-color: rgb(255, 237,224);
     padding: 5px 8px;
     border-radius: 4px;
     margin-left: 5px;
     margin-bottom: 8px;
-    color: rgb(255, 125, 26);
-
+    color: rgb(255,125,26);
 }
-
 .box-precio-sin-desc {
-    color: rgb(140, 140, 140),.8;
+    color: rgb(140, 140,140),.8;
     font-weight: 700;
     margin-top: 10px;
     font-size: 1.1em;
     text-decoration: line-through;
-
 }
-
 .box-minus-plus {
     display: flex;
     flex-direction: row;
     margin-top: 15px;
-    background-color: rgb(247,248,253);
-    border-radius: 15px;
+   background-color:  rgb(247,248,253);
+   border-radius: 10px;
+   margin-right: 250px;
 }
-
-.box-minus, .box-cant, .box-plus {
-    width: 50px;
+.box-minus, .box-cantidad, .box-plus {
+    width:50px;
     height: 50px;
-    display: flex;
+    display:flex;
     justify-content: center;
     align-items: center;
     font-size: 1.2em;
     font-weight: 700;
-}
 
-.box-minus, .box-plus {
-    color: rgb(255, 125, 26);
-    cursor: pointer;
 }
-
-.title-info-1 {
+.box-minus, .box-plus{
     color: rgb(255,125,26);
+    cursor: pointer;
+
+}
+.title-info-1{
+    color: rgb(255, 125, 26);
     font-size: .8em;
 }
-.title-info-2 {
+.title-info-2{
     font-size: 3em;
 }
 .texto-producto {
-    color: rgb(120,129,120);
+    color: rgb(120,120,120);
     line-height: 1.5em;
     font-weight: 500;
     margin-top: 40px;
+}
+.valor-total{
+    margin-top: 25px;
+    font-weight: 600;
+    font-size: 2em;
+    
+
 }
 /* Fonts */
 /* kanit-regular - latin */
