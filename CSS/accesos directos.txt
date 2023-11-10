@@ -1,8 +1,0 @@
-Accesos directos: 
-
--Cuando se quiere manipular la posición: P
--rotación: R 
--Escala: S
--Opasidad: T
-
-para ver las caractiristicas de la capa : U
