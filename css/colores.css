@@ -1,0 +1,63 @@
+h1 {
+    text-align: center;
+}
+.box-direction {
+    display: flex;
+    flex-direction: row;
+}
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+.box-style {
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.4em;
+    font-family: tahoma, sans-serif;
+    font-weight: 900;
+     
+}
+.box-darkcyan {
+    background-color: darkcyan;
+   
+}
+.box-goldenrod {
+    background-color: goldenrod;
+    
+}
+.box-orange {
+    background-color: orange;
+    
+}
+.box-64-80-50 {
+    background-color: rgb(64, 80, 50);
+
+}
+.box-6-16-36 {
+    background-color: rgb(6, 16, 36);
+}
+.box-81-146-211 {
+    background-color: rgb(81, 146, 211);
+}
+.box-00983A {
+    background-color: #00983A;
+}
+.box-F416BB {
+    background-color: #F416BB;
+}
+.box-F2778E {
+    background-color: #F2778E;
+}

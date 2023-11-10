@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  rgb(2,12,66);
+    color: white;
+    height: 100vh;
+    width: 100%;
+}
+label {
+font-family: 'waltograph', sans-serif;
+font-size: 12em;
+text-align: center;
+}
+/* waltograph - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'waltograph';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/waltograph42.otf'); /* IE9 Compat Modes */
+    src: url('../waltographUI.ttf'), format('embedded-opentype'), /* IE6-IE8 */
+         
+  }
