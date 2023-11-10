@@ -1,50 +1,310 @@
 <!DOCTYPE html>
-<html lang="en"></html>
+<html lang="es">
+
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewpoer" content="width=device-width, initial-scale=1.0">
-<title>Mi Portafolio-Carlos Alejandro Tovar Murcia</title>
-<link rel="stylesheet" href="CSS/style.css"> 
-<meta content="type=text/html;charset=uft-8">
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Inugami Producciones</title>
 </head>
-<body>
 
-<h1>Bienvenidos a mi Portafolio</h1>
-<h2>Carlos Alejandro Tovar Murcia - Multimedia 2500096</h2>
-<h3>Contactame!. Telefono 3198844458</h3>
-<p class="font-2em"> Amanecía sobre la ciudad. A lo lejos se entreveía la luminosidad que precede la salida del sol, y el vampiro decidió volver a casa. Pero estaba inquieto. Mientras volaba por el cielo, tenía la insistente sensación de que alguien le seguía. 
-    Llegó a su casa. Había comido mucho y ahora tenía sueño. Era una imprudencia, pero sin ningún cuidado se colgó boca abajo en su cueva, se tapó con sus alas y se dejó llevar por el sueño reparador. 
-    Fuera, los chicos que le habían seguido en bicicleta se quedaron decepcionados. 
-    -Ya te dije que era muy pequeño para ser un vampiro de verdad. 
-    -¿Qué hago ahora con la estaca? 
-    -No la tires, creo que han visto algún murciélago por los barrios del sur, podemos quedar la semana que viene...</p>
-    <p> Este es un parrafo de tamaño de 8em</p>
-    
-<ul>Menú
-    <li><a href="index.html">inicio</a></li>
-    <li><a href="listas.html">listas</a></li>
-    <li><a href="fuentes.html">fuentes</a></li>
-    <ul>
-        <li><a href="fuentes 1.html">fuentes1</a></li>
-        <li><a href="fuentes 2.html">fuentes2</a></li>
-        <li><a href="fuentes 3.html">fuentes3</a></li>
-        </ul>
-        <li><a href="colores.html">colores</a></li>
-        <li><a href="margenes.html">margenes</a> </li>
-        <li><a href="catalogo.html">catalogo</a></li>
-        <li><a href="tablas.html">tablas</a></li>
-        <li><a href="menu-horizontal.html">Horizontal1</a></li>
-        <li><a href="media-query.html">Media query</a></li>
-        <li><a href="menu-subitems.html">Media sub-iteams</a></li>
-        <li><a href="flexbox.html">Flex-box</a></li>
-        <li><a href="calendario.html">Calendario</a></li>
-        <li><a href="maquetacion.html">Maquetación</a></li>
-        <li><a href="maquetacion-2.html">Maquetación-II</a></li>
-        <li><a href="Portafolio.html">portafolio</a></li>
-        <li><a href="starbucks.html">starbucks</a></li>
-        <li><a href="sneackers.html">sneackers</a></li>
-</ul>
+<body>
+    <!-- SECCION I N I C I O -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1><img src="img/inugami img/nuevo-logo-inu_Mesa de trabajo 1.png" alt=""></h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Icono del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+
+                    <div class="redes">
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy <span>Carlos A. Tovar Murcia</span>, Diseñador</h2>
+                <p class="descripcion">Lo mejor en Producción Audiovisual y Diseño que prodras encontrar </p>
+                <a href="#portfolio">Conoce mi trabajo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION S O B R E M I -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/yo_mike.jpeg" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Conóceme</p>
+            <h2>Hola, Soy <span> Carlos Tovar</span> </h2>
+            <h3>Diseñador Gráfico y Productor Multimedia</h3>
+            <p>Soy diseñador Gráfico de la Universidad del Cauca, productor multimedia SENA, diplomado en Gerencia de mercadeo Universidad libre de Colombia y Pronto Especialista en desarrollo y diseño Ux/Ui, con experiencia en el área del Branding, producción audiovisual, animación y estrategias de mercadeo digital.</p>
+            <p> Apasionado de los  Video juegos y la cultura Geek, amante del voleibol y los perros</p>
+            <a href="#">Conoce mi hoja de vida</a>
+        </div>
+    </section>
+
+    <!-- SECCION S E R V I C I O S -->
+    <section id="servicios">
+        <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"> <i class="fa-solid fa-arrows-to-eye"></i></span>
+                <h4>Estrategia de Marketing Digital</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Posicionamiento</li>
+                    <li>Ventas</li>
+                    <li>Fidelización</li>
+                </ul>
+                <p>Desarrollo de un plan integral de marketing digital que incluya la identificación del público objetivo, la selección de canales de marketing adecuados, la definición de objetivos medibles y la creación de tácticas para alcanzar esos objetivos.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-regular fa-thumbs-up"></i></span>
+                <h4>Gestión de Redes Sociales</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Comunidad</li>
+                    <li>Social Media</li>
+                </ul>
+                <p>Creación y gestión de perfiles empresariales en plataformas de redes sociales relevantes, desarrollo de contenido atractivo y estrategias de publicación, interacción con la audiencia, monitoreo de menciones y análisis de resultados.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-bullhorn"></i></span>
+                <h4>Publicidad en Línea</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Target</li>
+                    <li>Graphic</li>
+                    <li>Acercamiento</li>
+                </ul>
+                <p>Creación y gestión de campañas publicitarias en plataformas como Google Ads, Facebook Ads, Instagram Ads, LinkedIn Ads, etc., con el objetivo de aumentar la visibilidad, generar leads y aumentar las ventas.</p>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-brain"></i></span>
+                <h4>Diseño de Marca</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Identidad</li>
+                    <li>Expresión</li>
+                    <li>Estatus</li>
+                </ul>
+                <p>Desarrollo de una identidad visual coherente y memorable para la empresa, incluyendo diseño de logotipo, paleta de colores, tipografía, elementos gráficos y pautas de uso de marca.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-palette"></i></span>
+                <h4>Diseñador Gráfico</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    
+                    <li>Graphic</li>
+                   
+                </ul>
+                <p>Transformamos tus ideas en impactantes obras visuales. Desde logotipos distintivos hasta materiales gráficos cautivadores, nuestro estudio de diseño gráfico destaca cada aspecto para elevar tu presencia visual. Confía en nosotros para transformar tu identidad gráfica. </p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-person-circle-question"></i></span>
+                <h4>Consultor Externo</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Para empresas emergentes</li>
+                    
+                </ul>
+                <p>Potenciamos el éxito de empresas emergentes como tu consultor externo. Con soluciones especializadas y experiencia estratégica, llevamos tu negocio al siguiente nivel. Juntos, hacemos crecer tu visión. </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION H A B I L I D A D E S -->
+    <div class="contenedor-skills" id="skills">
+        <h3>HABILIDADES </h3>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Illustrator</p>
+                <span class="porcentaje">90%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="html"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Adobe Premier y After effects </p>
+                <span class="porcentaje">60%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="js"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Adobe XD</p>
+                <span class="porcentaje">70%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="bd"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Photoshop</p>
+                <span class="porcentaje">60%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="ps"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Estrategia</p>
+                <span class="porcentaje">80%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="ps"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Diseño UX/IU</p>
+                <span class="porcentaje">85%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="ps"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portfolio">
+        <h3 class="titulo-seccion">Mis Proyectos</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/logo inugami_Mesa de trabajo 1.png" alt="">
+                <div class="info">
+                    <h4>Branding</h4>
+                    <p>Diseño de Identidad</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/fotografia-porta.png" alt="">
+                <div class="info">
+                    <h4>Fotografia</h4>
+                    <p>Foto estudio y eventos</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/app-mag.png" alt="">
+                <div class="info">
+                    <h4>Diseño UI/UX</h4>
+                    <p>Desarrollo de experiencia</p>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/uilustracion.png" alt="">
+                <div class="info">
+                    <h4>Ilustración de Personajes</h4>
+                    <p>Personajes</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/video.jpg" alt="">
+                <div class="info">
+                    <h4>Grabación y edición de video</h4>
+                    <p>Film maker</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/billis_negra.png" alt="">
+                <div class="info">
+                    <h4 href="https://www.youtube.com/watch?v=qCYdquQsRQ4&ab_channel=BilisNegra">Podcast</h4>
+                    <p>Billis negra -  12 preguntas sobre la depresión</p>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/programacion.jpg" alt="">
+                <div class="info">
+                    <h4><a href="index-2.html">Programación web</a></h4>
+                    <p>HTML-CSS-JS</p>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+
+    <!-- SECCTION C O N T A C T O -->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contactanos ahora</h3>
+        <div class="contenedor-form">
+            <form action="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre Completo *" class="input-mitad">
+                    <input type="email" placeholder="Dirección de Email" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Tema..." class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full"></textarea>
+                </div>
+
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+            </form>
+        </div>
+    </section>
+
+    <!-- SECCION FOOTER -->
+    <footer>
+        <p>Todos los derechos reservados - 2022</p>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
