@@ -1,74 +1,88 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-h1, h2, h3 {
+h1 {
     margin-bottom: 10px;
     text-align: center;
-    color: #eb4646;
+    color: white;
+    list-style-type: none;
+    margin: 30px;
+    padding: 0;
+    background-color: #eb5d0b;
+    overflow: hidden;
+    border-radius: 10px;
+    
+    
 }
 
+h2, h3 {
+    margin-bottom: 10px;
+    text-align: center;
+    color: rgb(235,93,11);
+}
 ul.menu {
     list-style-type: none;
-    margin: 0;
+    margin: 10px;
     padding: 0;
-    background-color: #eb4646;
+    background-color: #eb5d0b;
     overflow: hidden;
-    position: absolute;
-    margin-left: 45px;
-   border-radius: 10px;
-   
-    
+    border-radius: 10px;
+
+  
 }
 
 ul.menu li {
     float: left;
-   
-    
 }
 
 ul.menu li a {
-    display: block;
+    display: flex;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    
 }
 
 ul.menu li a:hover {
     background-color: #ddd;
-    color: #eb4646;
+    color: #eb5d0b;
 }
 
 ul.menu ul {
     display: none;
     position: absolute;
-    background-color: #eb4646;
+    background-color: #eb5d0b;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    list-style-type: none;
+    
     
 }
 
 ul.menu li:hover > ul {
-    display: inherit;
-  
+   display: inherit;
+   color: #eb5d0b;
 }
 
 ul.menu ul li {
     float: none;
     width: 200px;
-    
+   
 }
 
 ul.menu ul a {
     padding: 8px 16px;
-    color: white;
-   
+    color:white;
     
 }
 
 ul.menu ul a:hover {
     background-color: #ddd;
-    
+}
+
+.img_logo {
+ margin-left: 35%;
 }
