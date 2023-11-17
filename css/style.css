@@ -27,6 +27,7 @@ nav ul.menu {
     background-color: #eb5d0b;
     overflow: hidden;
     border-radius: 10px;
+    justify-content: center;
 }
 
 nav ul.menu li {
@@ -79,6 +80,8 @@ nav ul.menu ul a:hover {
     max-width: 100%;
     height: auto;
 }
+
+
 
 /* Media Queries para dispositivos móviles */
 @media screen and (max-width: 600px) {
