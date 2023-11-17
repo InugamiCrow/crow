@@ -1,18 +1,74 @@
-h1{
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    margin-bottom: 10px;
     text-align: center;
-    color:rgb(123, 123, 161)
+    color: #eb4646;
 }
-h1{
-    font-size: 6em;
+
+ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #eb4646;
+    overflow: hidden;
+    position: absolute;
+    margin-left: 45px;
+   border-radius: 10px;
+   
+    
 }
-h2{
+
+ul.menu li {
+    float: left;
+   
+    
+}
+
+ul.menu li a {
+    display: block;
+    color: white;
     text-align: center;
-    color: rgb(67, 92, 48);
-    font-size: 3em;
+    padding: 14px 16px;
+    text-decoration: none;
 }
-p.font-5em{
-    font-size: 5em;
+
+ul.menu li a:hover {
+    background-color: #ddd;
+    color: #eb4646;
 }
-p.font-8em {
-    font-size: 8em;
+
+ul.menu ul {
+    display: none;
+    position: absolute;
+    background-color: #eb4646;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    
+}
+
+ul.menu li:hover > ul {
+    display: inherit;
+  
+}
+
+ul.menu ul li {
+    float: none;
+    width: 200px;
+    
+}
+
+ul.menu ul a {
+    padding: 8px 16px;
+    color: white;
+   
+    
+}
+
+ul.menu ul a:hover {
+    background-color: #ddd;
+    
 }
