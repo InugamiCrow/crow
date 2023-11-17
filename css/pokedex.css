@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+}
+
+.ordered-list, .unordered-list {
+    list-style: none;
+    padding: 0;
+}
+
+.ordered-list li, .unordered-list li {
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grass-type {
+    background-color: #78C850; /* Color para tipo planta */
+    color: #FFF; /* Texto en color blanco */
+}
+
+.fire-type {
+    background-color: #F08030; /* Color para tipo fuego */
+    color: #FFF;
+}
+
+.water-type {
+    background-color: #6890F0; /* Color para tipo agua */
+    color: #FFF;
+}
